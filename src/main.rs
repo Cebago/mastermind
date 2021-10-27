@@ -223,4 +223,21 @@ mod tests {
         assert_eq!(gen_letter(3), 'd');
         assert_eq!(gen_letter(4), 'e');
     }
+
+    #[test]
+    fn test_make_correction() {
+        let word = String::from("abc");
+        let mut entry = String::from("abc");
+
+        assert_eq!(make_correction(entry.clone(), word.clone()), "OOO");
+        
+        entry = String::from("acb");
+        assert_eq!(make_correction(entry.clone(), word.clone()), "OXX");
+        
+        entry = String::from("adb");
+        assert_eq!(make_correction(entry.clone(), word.clone()), "O_X");
+        
+        entry = String::from("adc");
+        assert_eq!(make_correction(entry.clone(), word.clone()), "O_O");
+    }
 }

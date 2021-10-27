@@ -4,6 +4,7 @@
 
 struct Game {
     word: String,
+    #[allow(dead_code)]
     difficulty: Difficulty,
     tries: u32,
     is_correct: bool

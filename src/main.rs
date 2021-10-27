@@ -146,7 +146,6 @@ fn make_correction(entry: String, word: String) -> String {
 
 fn new_game(difficulty: Difficulty) -> Game {
     let word = gen_word(&difficulty);
-    println!("{}", word);
 
     Game {
         tries: 10,

@@ -203,3 +203,8 @@ mod tests {
         assert_eq!(gen_word(&diff).len(), 5);
     }
     
+    #[test]
+    fn test_gen_medium_world() {
+        let diff = Difficulty::Medium;
+        assert_eq!(gen_word(&diff).len(), 7);
+    }

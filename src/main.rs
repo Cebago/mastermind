@@ -78,6 +78,12 @@ fn main() {
 
         println!("{}", correct);
     }
+
+    if game.is_correct() {
+        println!("You win !!");
+    } else if !game.is_correct() && game.get_tries_number() == 0 {
+        println!("You lose")
+    }
 }
 
 fn read_user_entry() -> String {

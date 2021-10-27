@@ -41,6 +41,12 @@ fn main() {
     println!("Welcome to M4ST3RM1ND in Rust");
     println!("Let launch a new game");
     println!("Authorized characters: A, B, C, D, E");
+    println!("");
+    println!("Correction meaning:");
+    println!("O -> is correct and well placed");
+    println!("X -> is correct and bad placed");
+    println!("_ -> is incorrect");
+    println!("");
 
     let difficulty = user_entry();
 

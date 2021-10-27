@@ -87,7 +87,7 @@ fn read_user_entry() -> String {
     let _ = io::stdin().read_line(&mut user_entry);
     let chara:String = user_entry.trim().parse().unwrap();
     
-    return chara;
+    return chara.to_lowercase();
 }
 
 fn user_entry() -> Difficulty {

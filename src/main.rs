@@ -214,3 +214,13 @@ mod tests {
         let diff = Difficulty::Hard;
         assert_eq!(gen_word(&diff).len(), 10);
     }
+
+    #[test]
+    fn test_return_gen_letter() {
+        assert_eq!(gen_letter(0), 'a');
+        assert_eq!(gen_letter(1), 'b');
+        assert_eq!(gen_letter(2), 'c');
+        assert_eq!(gen_letter(3), 'd');
+        assert_eq!(gen_letter(4), 'e');
+    }
+}

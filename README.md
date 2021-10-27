@@ -4,4 +4,4 @@ Create the "Mastermind" game in Rust
 
 ## Stability
 
-![example workflow](https://github.com/Cebago/mastermind/actions/workflows/rust.yml/badge.svg)
+[![Rust](https://github.com/Cebago/mastermind/actions/workflows/rust.yml/badge.svg)](https://github.com/Cebago/mastermind/actions/workflows/rust.yml)

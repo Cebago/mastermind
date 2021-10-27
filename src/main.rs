@@ -134,9 +134,7 @@ fn make_correction(entry: String, word: String) -> String {
 
         if found == true && bad_place == true {
             correction.push('X');
-        }
-
-        if !found {
+        }else {
             correction.push('_');
         }
     }

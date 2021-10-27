@@ -192,3 +192,14 @@ fn gen_letter(number: usize) -> char {
     let letter = ['a', 'b', 'c', 'd', 'e'];
     return letter[number];
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_gen_easy_world() {
+        let diff = Difficulty::Easy;
+        assert_eq!(gen_word(&diff).len(), 5);
+    }
+    

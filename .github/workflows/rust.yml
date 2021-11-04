@@ -20,12 +20,12 @@ jobs:
       run: cargo build --verbose
     - name: Run tests
       run: cargo test --verbose
-    - name: generate doc
-      run: cargo build --target-dir doc/
-    - name: publish doc
+    - name: Generate documentation
+      run: cargo build --target-dir docs/
+    - name: Publish documentation
       uses: EndBug/add-and-commit@v7
       with:
         add : 'docs/*'
-        commit: 'Creating Rust doc'
+        message: 'Creating Rust documentation'
         committer_name: GitHub Actions
         committer_email: actions@github.com

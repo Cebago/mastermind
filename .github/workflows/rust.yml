@@ -20,8 +20,11 @@ jobs:
       run: cargo build --verbose
     - name: Run tests
       run: cargo test --verbose
-    - uses: EndBug/add-and-commit@v7
-      with: 
+    - name: generate doc
+      run: cargo build --target-dir doc/
+    - name: publish doc
+      uses: EndBug/add-and-commit@v7
+      with:
         add : 'docs/*'
         commit: 'Creating Rust doc'
         committer_name: GitHub Actions

@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["Difficulty",""]],"fn":[["gen_letter",""],["gen_word",""],["main",""],["make_correction",""],["new_game",""],["read_user_entry",""],["user_entry",""]],"struct":[["Game",""]]});
